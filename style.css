@@ -1,22 +1,102 @@
+:root {
+	--primary-font: 'RedHatMono-Reg', monospace;
+	--secondary-font: serif;
+	--black: #000;
+	--green: #62ff29;
+	--pink: #ff00f7;
+	font-family: var(--primary-font);
+	color: var(--text-color);
+	font-size: 16px;
+	letter-spacing: -0.01em;
+}
+
+::selection {
+	background: var(--text-color);
+	color: var(--text-color-secondary);
+}
+
+::-moz-selection {
+	background: var(--text-color);
+	color: var(--text-color-secondary);
+}
+
 body {
 	background: url(imgs/background.gif);
 	background-repeat: repeat;
 	background-repeat: repeat;
-  background-size: 10%;
+	background-size: 10%;
+	padding: 2rem;
 }
 
 .border {
-  box-shadow: 0px 0px 20px 5px #000000;
-  padding: 2px;
-  width: 555px;
-  border-right: 10px solid white;
-  border-left: 10px solid white;
-  border-top: 8px solid white;
-  border-bottom: 8px solid white;
-  border-image: url('imgs/border.gif') 2% round;
-    border-image-outset: 0;
-    border-image-width: 1;
-  border-image-outset: 3px 0px;
-  border-image-width: inherit;
-  background: white;
+	box-shadow: 0px 0px 20px 5px #000000;
+	padding: 2px;
+	width: 555px;
+	border-right: 10px solid white;
+	border-left: 10px solid white;
+	border-top: 8px solid white;
+	border-bottom: 8px solid white;
+	border-image: url('imgs/border.gif') 2% round;
+	border-image-outset: 0;
+	border-image-width: 1;
+	border-image-outset: 3px 0px;
+	border-image-width: inherit;
+	background: white;
+}
+
+.title {
+	background-image: url(imgs/bg-space.gif);
+	background-repeat: repeat-x;
+	background-position: center;
+	background-size: 20%;
+	padding: 2rem;
+	color: var(--pink);
+	border: 4px inset var(--pink);
+}
+
+.title > * {
+	font-weight: normal;
+	text-align: center;
+	margin: 1rem;
+}
+
+.title h1 {
+	color: var(--pink);
+}
+
+.title h2 {
+	color: var(--pink);
+}
+
+.menu {
+	display: flex;
+	flex-direction: row;
+	padding: 2rem 0;
+	color: var(--pink);
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+.menu div {
+	/* width: min-content; */
+	margin: 0.25rem 0;
+	border: 4px inset var(--pink);
+	padding: 0.25rem 1rem;
+	background: white;
+	flex-grow: 1;
+}
+
+.menu div a {
+	/* background-image: url(imgs/button.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  background-size: 120% 120%; */
+	/* padding: 1rem; */
+	/* display: inline-block; */
+	display: inline-block;
+	width: 100%;
+	margin: 0 auto;
+	color: blue;
+	text-align: center;
 }
