@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'Milonga';
+  src: url('fonts/Milonga-Regular.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kaushan';
+  src: url('fonts/KaushanScript-Regular.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mina';
+  src: url('fonts/Mina-Regular.ttf') format('truetype');
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Mochiy';
+  src: url('fonts/MochiyPopOne-Regular.ttf') format('truetype');
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Hevilla';
+  src: url('fonts/Hevilla.otf') format('opentype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Horsepower';
+  src: url('fonts/Horsepower.otf') format('opentype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PP';
+  src: url('../fonts/PPNeueMontreal-Book.otf') format('opentype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PP-bold';
+  src: url('../fonts/PPNeueMontreal-Medium.otf') format('opentype');
+  font-style: normal;
+}
