@@ -51,7 +51,7 @@ body {
 	margin: 0;
 }
 
-header div, main div {
+header div, main div, footer div {
 	border: 4px inset var(--pink);
 	background: var(--black);
 }
@@ -388,6 +388,10 @@ font-family: Arial, Helvetica, sans-serif;
 font-size: 0.8rem;
 }
 
+.overlay .window ul p {
+	margin: 0;
+}
+
 .overlay .window li {
 	margin-left: 2rem;
 	
@@ -427,7 +431,7 @@ width: 100%;
 }
 
 .overlay .window.payment {
-		margin: 6vh auto;
+		margin: 4vh auto;
 }
 
 .overlay .window.payment .button {
@@ -435,6 +439,16 @@ width: 100%;
 }
 .overlay .window.payment .button button {
 	width: 100%;
-
 }
 
+.overlay .window.payment .radio {
+	margin-bottom: 0.5rem;
+}
+
+.overlay .window.payment .radio div {
+	display: inline-block
+}
+
+.overlay .window.payment .radio div input {
+	width: min-content;
+}
