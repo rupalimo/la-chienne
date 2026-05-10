@@ -41,17 +41,17 @@
 }
 
 body {
-		/* background-image: url(imgs/bg-space.gif); */
+	/* background-image: url(imgs/bg-space.gif); */
 	background: url(imgs/background.gif);
 	background-repeat: repeat;
 	background-repeat: repeat;
 	background-size: 20%;
-	padding: 2rem;
+	padding: 0 2rem;
 
 	margin: 0;
 }
 
-div {
+header div, main div {
 	border: 4px inset var(--pink);
 	background: var(--black);
 }
@@ -61,9 +61,9 @@ main p {
 }
 
 .border {
-	box-shadow: 0px 0px 20px 5px #000000;
-	padding: 2px;
-	width: 555px;
+	/* box-shadow: 0px 0px 20px 5px #000000; */
+	/* padding: 2px; */
+	/* width: 555px; */
 	border-right: 10px solid white;
 	border-left: 10px solid white;
 	border-top: 8px solid white;
@@ -71,9 +71,9 @@ main p {
 	border-image: url('imgs/border.gif') 2% round;
 	border-image-outset: 0;
 	border-image-width: 1;
-	border-image-outset: 3px 0px;
+	/* border-image-outset: 3px 0px; */
 	border-image-width: inherit;
-	background: white;
+	/* background: white; */
 }
 
 .title {
@@ -83,6 +83,7 @@ main p {
 	background-position: center;
 	background-size: 20%;
 	color: var(--pink);
+	margin-top: 2rem;
 }
 
 .title > * {
@@ -114,8 +115,6 @@ main p {
 	margin: 2rem 0;
 }
 
-
-
 .menu div {
 	padding: 1rem;
 
@@ -124,27 +123,27 @@ main p {
 }
 
 .menu div a {
-
 	display: inline-block;
 	width: 100%;
 	margin: 0 auto;
 	color: var(--pink);
-	text-align: center;;
+	text-align: center;
 	font-weight: bold;
-  font-size: 0.8rem;
+	font-size: 0.8rem;
 }
 
-h3, h4 {
-text-align: center;
-text-transform: uppercase;
+h3,
+h4 {
+	text-align: center;
+	text-transform: uppercase;
 }
 
 main div {
 	margin-bottom: 2rem;
 }
 
-main div:not(.banner-img), footer div {
-
+main div:not(.banner-img, .portrait-img, .banner-video),
+footer div {
 	padding: 1rem 2rem;
 }
 
@@ -168,11 +167,13 @@ ul {
 li a {
 	font-family: var(--button);
 	color: var(--pink);
-
 }
 
 .quote p {
 	text-align: center;
+}
+footer {
+	margin-bottom: 2rem;
 }
 
 footer div {
@@ -191,3 +192,249 @@ footer p {
 	position: absolute;
 	right: 0;
 }
+
+.second-headers {
+	background-image: url(imgs/bg-space.gif);
+	background-repeat: repeat;
+	background-position: center;
+	background-size: 30%;
+}
+
+.second-headers h4 {
+	font-family: var(--button);
+}
+
+.second-headers h5 {
+	font-family: var(--body);
+	font-size: 1rem;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.list {
+	list-style: square;
+	text-align: left;
+}
+
+.list li {
+	font-family: var(--body);
+	margin: 0 0 0 1rem;
+}
+
+.grid-2 {
+	display: grid;
+	grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+	grid-template-rows: repeat(2, 500px);
+	gap: 0 2rem;
+}
+
+.portrait-img {
+	width: 100%;
+	overflow: hidden;
+	height: auto;
+}
+
+.portrait-img img {
+	width: 100%;
+}
+
+.table ul {
+	text-align: left;
+}
+
+.table span {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 2rem 0;
+}
+
+.table span p:nth-of-type(2) {
+	margin: 0 0.25rem;
+}
+
+.table span p:nth-of-type(3) {
+	width: 50%;
+}
+
+.table ul p,
+.table ul strong {
+	font-size: 0.8rem;
+	margin: 0;
+	font-family: monospace;
+}
+
+hr {
+	height: 1rem;
+	background: var(--black);
+	box-shadow: 0 0 0.5rem 0.5rem var(--black);
+	border: none;
+	margin: 0 0 2rem 0;
+}
+
+.banner-video {
+	height: 70vh;
+	overflow: hidden;
+}
+
+.banner-video img {
+	width: 100%;
+}
+
+.empty {
+	display: flex;
+	flex-direction: column;
+	height: calc(100% - 2rem);
+	align-items: center;
+	justify-content: center;
+}
+
+.empty h6 {
+	color: white;
+	text-align: center;
+	padding: 0 4rem;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.empty h6:first-of-type {
+	border: 1px solid white;
+	margin: 2rem 0;
+	padding: 0.25rem;
+}
+
+.underline em {
+	text-decoration: underline;
+	text-underline-offset: 2px;
+}
+
+.disclaimer {
+	background-image: radial-gradient(var(--pink), white, var(--pink), white);
+	color: black;
+	text-align: center;
+	font-family: var(--menu);
+	padding: 1rem;
+	background-size: 100%;
+}
+
+.grid-4 {
+	display: grid;
+	grid-template-columns: repeat(3, calc((100% / 3) - 1.5rem));
+	gap: 2rem;
+}
+
+figure {
+	margin: 0 0.5rem;
+}
+
+figcaption {
+	font-size: 0.7rem;
+	background: rgba(0, 0, 0, 0.75);
+	padding: 0 1rem;
+	box-shadow: 0 0 1rem var(--black) inset;
+}
+
+figcaption > * {
+	text-align: left;
+	color: white;
+}
+
+.grid-4 span {
+		overflow: hidden;
+		height: 140px;
+		display: block;
+		
+}
+
+.grid-4 img {
+	width: 100%;
+
+}
+
+.overlay {
+	position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 100;
+	background:#000000ad;
+}
+
+
+.overlay .window {
+	border: 4px solid orange;
+	background: white;
+	width: 70vw;
+	padding: 1rem 2rem 2rem 2rem;
+	margin: 18vh auto;
+color: var(--black);
+border-radius: 1rem;
+box-shadow: 0 0 1rem 0.5rem black;
+}
+
+
+
+.overlay .window h4 {
+	text-align: left;
+	font-family: 'Arial Black', 'Arial', sans-serif;
+	text-transform: none;
+}
+
+.overlay .window ul {
+	text-align: left;
+	list-style: disc;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 0.8rem;
+}
+
+.overlay .window li {
+	margin-left: 2rem;
+	
+}
+
+.overlay .window .button {
+	width: 100%;
+	display: inline-block;
+}
+
+.overlay .window .button button {
+	width: 48%;
+}
+
+.overlay .window form label {
+	font-size: 12px;
+	font-family: 'Arial Narrow', 'Arial', sans-serif;
+}
+
+.overlay .window form input:nth-of-type(1), 
+.overlay .window form input:nth-of-type(2) {
+	width: 100%;
+}
+
+.overlay .window form span div {
+	width: 48%;
+}
+
+
+.overlay .window form span div + div {
+	margin-left: 4%;
+}
+
+.overlay .window form span {
+width: 100%;
+  display: inline-flex;
+}
+
+.overlay .window.payment {
+		margin: 6vh auto;
+}
+
+.overlay .window.payment .button {
+	margin-top: 1rem;
+}
+.overlay .window.payment .button button {
+	width: 100%;
+
+}
+
