@@ -1,6 +1,5 @@
 @import 'font.css';
 
-
 :root {
 	--primary-font: 'RedHatMono-Reg', monospace;
 	--secondary-font: serif;
@@ -8,10 +7,12 @@
 	--grey: #a9a9a9;
 	--green: #62ff29;
 	--pink: #ff00f7;
-	--light-pink:#ffbbfd;
+	--light-pink: #ffbbfd;
 	--title-height: 225px;
-	--title-font: 'Kaushan', monospace;
-	--subtitle-font: 'Horsepower', 'Hevilla', monospace;
+	/* --title-font: 'Wisdom', 'Angel', 'Kaushan', 'Horsepower', 'Hevilla', 'Mochiy', 'Milonga','Mina', monospace; */
+
+	--title-font: 'Milonga', monospace;
+	--subtitle-font: 'Horsepower', 'Milonga', monospace;
 	--menu: 'Hevilla', monospace;
 	--button: 'Mochiy', monospace;
 	--body: 'Milonga', monospace;
@@ -148,14 +149,73 @@ footer div {
 }
 
 .banner-img {
+	
 	overflow: hidden;
-	height: 50vh;
+	height: calc(100vh - 4rem);
+	margin-top: 2rem;
+	background-image: url(sel/DSC_0193.JPG);
+	background-size: 70%;
+	background-repeat: repeat;
+}
+
+.banner-img span {
+	display: flex;
+	flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.banner-img span img {
+	width: 30px;
+	height: 30px;
+	margin: 0 0.5rem;
+
+}
+
+.banner-img span img:nth-of-type(1) {
+	transform: rotate(-12deg);
+}
+
+
+.banner-img span img:nth-of-type(2) {
+	transform: rotate(12deg);
+}
+
+.banner-img h1 {
+	font-family: var(--title-font);
+	font-size: 3rem;
+	margin-bottom: 0;
+	text-shadow: 1px 1px var(--pink);
+	padding-top: 1rem;
+}
+
+.banner-img h2 {
+	font-family: var(--subtitle-font);
+	margin: 0;
+	font-style: italic;
+}
+
+.banner-img h1,
+.banner-img h2 {
+	text-align: center;
 }
 
 .banner-img img {
 	width: 100%;
 	height: auto;
 	transform: translateY(-20%);
+}
+
+.star-frame {
+	background-image: url(imgs/star-text-frame.gif);
+	background-position: center	;
+	background-position: center;
+  background-size: 96% 100%;
+  height: 100%;
+  width: 100%;
+  margin: -2rem 0;
 }
 
 ul {
@@ -455,7 +515,6 @@ figcaption > * {
 .overlay .window.payment .radio div input {
 	width: min-content;
 }
-
 
 .demo {
 	z-index: 1000;

@@ -16,6 +16,17 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Wisdom';
+  src: url('fonts/WisdomWordsPersonalUse-r9E9.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Angel';
+  src: url('fonts/AngeltearsTrial-poar.otf') format('opentype');
+  font-style: normal;
+}
 
 @font-face {
   font-family: 'Mochiy';
