@@ -4,10 +4,11 @@
 :root {
 	--primary-font: 'RedHatMono-Reg', monospace;
 	--secondary-font: serif;
-	--black: #000;
+	--black: #000000c8;
 	--grey: #a9a9a9;
 	--green: #62ff29;
 	--pink: #ff00f7;
+	--light-pink:#ffbbfd;
 	--title-height: 225px;
 	--title-font: 'Kaushan', monospace;
 	--subtitle-font: 'Horsepower', 'Hevilla', monospace;
@@ -16,7 +17,7 @@
 	--body: 'Milonga', monospace;
 	--footer: 'Mina', monospace;
 	font-family: var(--primary-font);
-	color: var(--pink);
+	color: var(--light-pink);
 	font-size: 18px;
 }
 
@@ -42,8 +43,9 @@
 }
 
 body {
+	background-image: url(imgs/bk-cheetah.jpg);
 	/* background-image: url(imgs/bg-space.gif); */
-	background: url(imgs/background.gif);
+	/* background: url(imgs/background.gif); */
 	background-repeat: repeat;
 	background-repeat: repeat;
 	background-size: 20%;
@@ -91,7 +93,7 @@ main p {
 }
 
 .title h1 {
-	color: var(--pink);
+	color: var(--light-pink);
 	font-family: var(--button);
 	font-size: 3rem;
 	margin-bottom: 0;
@@ -99,7 +101,7 @@ main p {
 
 .title h2 {
 	margin-top: 0;
-	color: var(--pink);
+	color: var(--light-pink);
 	font-weight: bold;
 
 	font-family: var(--body);
@@ -108,7 +110,7 @@ main p {
 .menu {
 	display: flex;
 	flex-direction: row;
-	color: var(--pink);
+	color: var(--light-pink);
 	padding: 0;
 	margin: 2rem 0;
 }
