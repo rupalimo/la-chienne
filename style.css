@@ -55,10 +55,18 @@ body {
 	margin: 0;
 }
 
-header div,
-main div,
-footer div {
+header div {
 	border: 4px inset var(--pink);
+	background: var(--black);
+}
+
+main div {
+	border: 4px inset blueviolet;
+	background: var(--black);
+}
+
+footer div {
+	border: 4px inset turquoise;
 	background: var(--black);
 }
 
@@ -152,9 +160,9 @@ footer div {
 	
 	overflow: hidden;
 	height: calc(100vh - 4rem);
-	margin-top: 2rem;
+	margin: 2rem 0;
 	background-image: url(sel/DSC_0193.JPG);
-	background-size: 70%;
+	background-size: 100%;
 	background-repeat: repeat;
 }
 
@@ -241,7 +249,7 @@ footer div {
 }
 
 footer p {
-	font-family: var(--footer);
+	font-family: var(--body);
 	margin-bottom: 0;
 	position: relative;
 }
