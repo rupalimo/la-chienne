@@ -49,9 +49,8 @@ body {
 	/* background: url(imgs/background.gif); */
 	background-repeat: repeat;
 	background-repeat: repeat;
-	background-size: 20%;
+	background-size: 30%;
 	padding: 0 2rem;
-
 	margin: 0;
 }
 
@@ -63,6 +62,7 @@ header div {
 main div {
 	border: 4px inset blueviolet;
 	background: var(--black);
+	/* box-shadow: 0 0 1rem 2rem blueviolet; */
 }
 
 footer div {
@@ -237,9 +237,45 @@ li a {
 	color: var(--pink);
 }
 
+.quote {
+  color: black;
+  background: white;
+  padding: 20px 10px 14px 12px;
+  background-clip: padding-box;
+  border-image-outset: 0 0 0 12px;
+  border-image-slice: 45 8 8 15;
+  border-image-width: 90px 16px 16px 30px;
+  border-image-repeat: stretch;
+  border-style: solid;
+  border-color: transparent;
+  image-rendering: pixelated;
+  border-image-source: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAA4CAMAAADU8BjBAAAAGFBMVEUAAADMM2b/mcz/zP//Zsz/ZpnMAGaZADO5jAOTAAAAAXRSTlMAQObYZgAAAHBJREFUeNrt0MUBAzEQQ9GRTP13vKBw5DBn//UZJwKdRmEnjJRcFNGUH0JZWSKmkqeIuJgAApbAgjFLpU9TtTmixBLrJJ7YbvjXMo1lGm8n5nVHtNM+BXbbI6UrMx9PY5aYlKF1jyHmvfZoP5HssBgAY3gKfDQh/QIAAAAASUVORK5CYII=");
+}
+
 .quote p {
 	text-align: center;
+	font-size: 1.35rem;
+	margin: 0;
+	color: #6301d8;
+  font-weight: bold;
 }
+
+.arrow {
+	height: 80px;
+  margin: 0 auto;
+  width: auto;
+  display: block;
+}
+
+.tulip {
+	display: flex;
+}
+
+.tulip img {
+	width: 120px;
+	margin: 0 4px;
+}
+
 footer {
 	margin-bottom: 2rem;
 }
@@ -255,10 +291,7 @@ footer p {
 }
 
 .citation {
-	text-align: right;
-	margin: 0 2rem;
-	position: absolute;
-	right: 0;
+	margin-left: 70%;
 }
 
 .second-headers {
@@ -532,3 +565,19 @@ figcaption > * {
 	background: white;
 	color: red;
 }
+
+.bottom {
+  color: #040204;
+  background: #ec82ff;
+  text-shadow: 0.02rem 0.02rem 0 #742afc;
+  padding: 12px;
+  border-radius: 10px;
+  border-image-slice: 8;
+  border-image-width: 8px;
+  border-image-repeat: round;
+  border-style: solid;
+  border-color: transparent;
+  image-rendering: pixelated;
+  border-image-source: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAgMAAAAOFJJnAAAADFBMVEUAAADEdvz8ysT8/vyjEwWRAAAAAXRSTlMAQObYZgAAAJlJREFUeNqt0AHGQkEUBeAD/ybeqn50Jg0FguZ5gBdKC7p3XMBAtIwBtIGWENSdeWoFnQMfjnEN/tjzj8HYukcqwUtBqtEbBCNbo2DqkySY1y/PQ8AdPVcDJ3hOBbSOinBrOBPx3nAhxm3DvMG04IB5gYAdx1+98zns6Rj7qQZqZqYWBLVgQSuillhiJpLWVJMRgw98svp+yxv5OF+fnuFn9QAAAABJRU5ErkJggg==");
+}
+
