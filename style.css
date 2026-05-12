@@ -135,6 +135,35 @@ footer div {
 	background-image: url(sel/DSC_0193.JPG);
 	background-size: 100%;
 	background-repeat: repeat;
+	position: relative;
+}
+
+.banner-img .gif {
+	position: absolute;
+	height: auto;
+}
+
+.banner-img .gif:nth-of-type(1) {
+transform: rotate(12deg);
+	bottom: 5%;
+	left: 4%;
+	width: 20%;
+}
+
+
+.banner-img .gif:nth-of-type(2) {
+	width: 45%;
+	top: 60%;
+	right: 2%;
+	transform: rotate(-18deg);
+}
+
+
+.banner-img .gif:nth-of-type(3) {
+		width: 45%;
+	top: 40%;
+	left: 5%;
+	transform: rotate(-3deg);
 }
 
 .banner-img-portrait {
@@ -179,6 +208,8 @@ footer div {
 	font-family: var(--subtitle-font);
 	margin: 0;
 	font-style: italic;
+	color: blue;
+	text-shadow: 1px 1px 0px yellowgreen;
 }
 
 .banner-img h1,
