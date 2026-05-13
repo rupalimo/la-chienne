@@ -132,10 +132,12 @@ footer div {
 	overflow: hidden;
 	height: calc(100vh - 4rem);
 	margin-top: 1rem;
-	background-image: url(sel/DSC_0193.JPG);
+	background-image: url(imgs/1A_LandingPage.png);
 	background-size: 100%;
 	background-repeat: repeat;
 	position: relative;
+	background-size: 120%;
+	background-position-y: bottom;
 }
 
 .banner-img .gif {
@@ -144,26 +146,27 @@ footer div {
 }
 
 .banner-img .gif:nth-of-type(1) {
-transform: rotate(12deg);
-	bottom: 5%;
-	left: 4%;
+	transform: rotate(12deg);
+	bottom: 12%;
+	left: 13%;
 	width: 20%;
+	height: 65px;
 }
-
 
 .banner-img .gif:nth-of-type(2) {
-	width: 45%;
-	top: 60%;
+	width: 47%;
+	top: 58%;
 	right: 2%;
 	transform: rotate(-18deg);
+	height: 65px;
 }
 
-
 .banner-img .gif:nth-of-type(3) {
-		width: 45%;
-	top: 40%;
+	width: 45%;
+	top: 42%;
 	left: 5%;
-	transform: rotate(-3deg);
+	transform: rotate(8deg);
+	height: 65px;
 }
 
 .banner-img-portrait {
@@ -171,7 +174,7 @@ transform: rotate(12deg);
 		14 / 14px / 0 round;
 	border-width: 10px;
 	border-style: solid;
-	background-image: url(sel/DSC_0193.JPG);
+	background-image: url(imgs/2A_CHSLD_main.png);
 	background-size: 100%;
 	background-repeat: repeat;
 }
@@ -193,15 +196,18 @@ transform: rotate(12deg);
 	width: 30px;
 	height: 30px;
 	margin: 0 0.5rem;
-	mix-blend-mode: difference;
 }
 
 .banner-img h1 {
 	font-family: var(--title-font);
 	font-size: 3rem;
 	margin-bottom: 0;
-	text-shadow: 1px 1px var(--pink);
+
 	padding-top: 1rem;
+
+	text-shadow: 1px 1px #ffe2fe;
+
+	color: #f63dd0;
 }
 
 .banner-img h2 {
@@ -299,7 +305,7 @@ footer p {
 }
 
 .citation {
-	margin-left: 70%;
+	font-size: 14px;
 }
 
 .second-headers {
@@ -342,25 +348,49 @@ footer p {
 	gap: 0 2rem;
 }
 
-.portrait-img {
-	width: 100%;
+.grid-2-flex {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.grid-2-flex h3 {
+	z-index: 100;
+	position: absolute;
+	left: 4rem;
+}
+
+.grid-2-flex div {
+	width: calc(50% - 1rem);
+	height: fit-content;
 	overflow: hidden;
-	height: auto;
 }
 
 .portrait-img img {
 	width: 100%;
+	overflow: hidden;
+}
+
+.grid-2-flex .portrait-img img {
+	width: calc(100% + 8px);
+	scale: 1.2;
 }
 
 .table ul {
 	text-align: left;
+	padding: 0;
+}
+
+.table h5 {
+	margin-top: 0;
 }
 
 .table span {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	margin: 2rem 0;
+	margin: 1rem 0;
 }
 
 .table span p:nth-of-type(2) {
@@ -399,15 +429,28 @@ hr {
 	border-style: solid;
 	border-color: transparent;
 	image-rendering: pixelated;
+	background-image: url(imgs/3B_NoLivePic.png);
+	background-size: cover;
 	border-image-source: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqBAMAAAA37dRoAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAA9QTFRFAAAAdHR0vLy8AAAA/Pz8oRsWEgAAAAV0Uk5TAP////8c0CZSAAAA4ElEQVR4nO2TTQ6CMBBGv+kFoMatCo1rE8MNvD9BL4BcQEviGnDoH7S6dGkXTOcx+dKGB8Esym2detsCikveu7cTP1qmShTA09MSGK6ahGIYUQwNicvYARufewfEriGl2jRX1XTcdykVD0ezzlKRmeORMqX0s08ZqEbhZ0e+D1NO4AstFDJQjbCkdAlfaDVv64WanranOMH0/9mfzaZfyM5aupgaKA63wvswvgJVaydHT0Wxoq3zAbGpM+V0JE4yldWHvxpE+bmLTZ36iexJF1NNOrGDvFZOzhH8v8mUarwBuDLBzmKXl+gAAAAASUVORK5CYII=');
 }
 
 .banner-video.full {
-	height: calc(100vh - 2rem);
+	background-image: url(imgs/42C_greenscreen.png);
+	height: calc(100vh - 6rem);
 	overflow: hidden;
 	color: white;
-	background: black;
+	/* background: black; */
 	margin: 1rem 0;
+}
+
+.full-screen {
+		background-image: url(imgs/42C_greenscreen.png);
+		background-size: cover;
+		width: 100vw;
+		height: 100vh;
+		position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .banner-video a {
@@ -471,7 +514,8 @@ figure {
 	margin: 0 0.5rem;
 }
 
-figcaption {
+
+figcaption, .figcaption {
 	font-size: 0.7rem;
 	background: rgba(0, 0, 0, 0.75);
 	padding: 0 1rem;
