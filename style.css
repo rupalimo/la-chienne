@@ -132,12 +132,13 @@ footer div {
 	overflow: hidden;
 	height: calc(100vh - 4rem);
 	margin-top: 1rem;
-	background-image: url(imgs/1A_LandingPage.png);
+	background-image: url(imgs/1A_LandingPage2.png);
 	background-size: 100%;
 	background-repeat: repeat;
 	position: relative;
 	background-size: 120%;
-	background-position-y: bottom;
+	background-position: bottom left;
+
 }
 
 .banner-img .gif {
